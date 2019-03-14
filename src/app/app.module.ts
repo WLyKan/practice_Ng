@@ -5,16 +5,17 @@ import { FormsModule } from '@angular/forms'; // 引入ngModel
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
 import { CustomerDashboardModule } from './customer-dashboard/customer-dashboard.module';
 import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
+import { MessageComponent } from './message/message.component';
 
 @NgModule({
   declarations: [ // 声明组件
     AppComponent,
     HeroesComponent,
-    HeroDetailComponent
+    HeroDetailComponent,
+    MessageComponent
   ],
   imports: [ // 引入全局模块
     BrowserModule,
