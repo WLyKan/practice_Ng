@@ -18,10 +18,10 @@ export class HeroesComponent implements OnInit {
     // heroes = HEROES;
     heroes: Hero[];
 
-    selectedHero: Hero = {
-        id: 1,
-        name: 'Windstorm'
-    };
+    // selectedHero: Hero = {
+    //     id: 1,
+    //     name: 'Windstorm'
+    // };
 
     // 让构造函数保持简单，只做初始化操作，比如把构造函数的参数赋值给属性。数据访问逻辑交给service
     constructor(private heroService: HeroService) {
@@ -31,9 +31,9 @@ export class HeroesComponent implements OnInit {
         this.getHeroes();
     }
 
-    onSelect(hero: Hero): void {
-        this.selectedHero = hero;
-    }
+    // onSelect(hero: Hero): void {
+    //     this.selectedHero = hero;
+    // }
 
     getHeroes(): void {
         this.heroService.getHeroes()

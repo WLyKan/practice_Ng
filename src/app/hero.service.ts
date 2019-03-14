@@ -15,11 +15,13 @@ export class HeroService {
 
     constructor(private messageService: MessageService) { }
 
-    // getHeroes(): Hero[] {
-    //     return HEROES;
-    // }
     getHeroes(): Observable<Hero[]> {
         this.messageService.add('HeroService: fetched heroes');
         return of(HEROES); // 返回一个 Observable<Hero[]>，它会发出单个值，这个值就是这些模拟英雄的数组
+    }
+
+    getHero(id: number): Observable<Hero> {
+        this.messageService.add(`HeroService: fetched hero id=${id}`);
+        return of(HEROES.find(hero => hero.id === id));
     }
 }
