@@ -3,16 +3,18 @@ h2 {
     color: red;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
-  }
-  body {
+}
+
+body {
     margin: 2em;
-  }
-  body, input[text], button {
+}
+
+body, input[text], button {
     color: crimson;
     font-family: Cambria, Georgia;
-  }
+}
 
-  button.clear {
+button.clear {
     font-family: Arial;
     background-color: #eee;
     border: none;
@@ -20,16 +22,25 @@ h2 {
     border-radius: 4px;
     cursor: pointer;
     cursor: hand;
-  }
-  button:hover {
+}
+
+button:hover {
     background-color: #cfd8dc;
-  }
-  button:disabled {
+}
+
+button:disabled {
     background-color: #eee;
     color: #aaa;
     cursor: auto;
-  }
-  button.clear {
+}
+
+button.clear {
     color: #888;
     margin-bottom: 12px;
-  }
+}
+.c_msg{
+    margin: 10px auto 20px;
+    padding: 10px 20px;
+    border: 1px dashed #999;
+    border-radius: 4px;
+}

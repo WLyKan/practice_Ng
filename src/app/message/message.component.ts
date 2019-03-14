@@ -9,7 +9,7 @@ import { MessageService } from '../message.service';
 export class MessageComponent implements OnInit {
 
   constructor(public messageService: MessageService) { // messageService 属性必须是公共属性，因为你将会在模板中绑定到它
-
+    // console.log(messageService.messages);
   }
 
   ngOnInit() {
