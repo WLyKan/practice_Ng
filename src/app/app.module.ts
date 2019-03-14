@@ -8,11 +8,13 @@ import { AppComponent } from './app.component';
 
 import { CustomerDashboardModule } from './customer-dashboard/customer-dashboard.module';
 import { HeroesComponent } from './heroes/heroes.component';
+import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 
 @NgModule({
   declarations: [ // 声明组件
     AppComponent,
-    HeroesComponent
+    HeroesComponent,
+    HeroDetailComponent
   ],
   imports: [ // 引入全局模块
     BrowserModule,
