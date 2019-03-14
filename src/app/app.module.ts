@@ -1,18 +1,20 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser'; // 浏览器运行必备
+import { NgModule } from '@angular/core'; // ng模块装饰器
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms'; // 引入ngModel
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { CustomerDashboardModule } from './customer-dashboard/customer-dashboard.module';
+import { HeroesComponent } from './heroes/heroes.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
+  declarations: [ // 声明组件
+    AppComponent,
+    HeroesComponent
   ],
-  imports: [
+  imports: [ // 引入全局模块
     BrowserModule,
     FormsModule,
     HttpClientModule,
